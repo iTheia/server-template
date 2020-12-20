@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"lib": ["es5", "es6"],
+		"target": "es5",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"outDir": "./build",
+		"emitDecoratorMetadata": true,
+		"types": ["node"],
+		"allowJs": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"sourceMap": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "build"]
+}
