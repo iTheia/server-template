@@ -1,13 +1,13 @@
 import http from 'http';
 import { Application } from 'express';
 
-export default class Server {
+export class HTTPServer {
 	public app: Application;
 	public server: http.Server;
 
 	constructor(app: Application) {
-		this.server = http.createServer(app);
 		this.app = app;
+		this.server = http.createServer(app);
 	}
 
 	async connectDb(callback: Function, options?: Object) {

@@ -5,11 +5,11 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { join } from 'path';
 import { corsConfig } from '../config';
-import { router } from '../routes';
+import { router } from './routes';
 
-const app = express();
+export const app = express();
 
-const publicPath = join(__dirname, '../../', 'static');
+const publicPath = join(__dirname, '../../', 'public');
 
 app.use(json());
 app.use(urlencoded({ extended: true }));
@@ -19,5 +19,3 @@ app.use(cors(corsConfig));
 app.use(express.static(publicPath));
 app.use('/', express.static(publicPath));
 app.use('/api/v1', router);
-
-export default app;
