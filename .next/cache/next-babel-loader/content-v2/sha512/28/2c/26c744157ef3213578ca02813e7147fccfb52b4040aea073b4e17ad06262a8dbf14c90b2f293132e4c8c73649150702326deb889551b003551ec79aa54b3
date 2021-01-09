@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from \"./variables\";","map":{"version":3,"sources":["C:/Users/marti/projects/server-template/constants/index.ts"],"names":[],"mappings":"AAAA,cAAc,aAAd","sourcesContent":["export * from \"./variables\";\r\n"]},"metadata":{},"sourceType":"module"}
